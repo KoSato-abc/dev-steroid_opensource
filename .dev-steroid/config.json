@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.1",
+  "git": {
+    "auto": true,
+    "base_branch": "main"
+  },
+  "docs_root": ".dev-steroid/docs",
+  "template_root": ".dev-steroid/template",
+  "state_product_path": ".dev-steroid/state.product.json",
+  "platforms": {},
+  "docs_phase_map": {
+    "requirements": {
+      "order": 10,
+      "dir": "10_requirements",
+      "template": "prd-requirements",
+      "depends_on": null
+    },
+    "data_design": {
+      "order": 20,
+      "dir": "20_data_design",
+      "template": "prd-data-design",
+      "depends_on": "requirements"
+    },
+    "basic_design": {
+      "order": 30,
+      "dir": "30_basic_design",
+      "template": "prd-basic-design",
+      "depends_on": "data_design"
+    },
+    "detailed_design": {
+      "order": 40,
+      "dir": "40_detailed_design",
+      "template": "prd-detailed-design",
+      "depends_on": "basic_design"
+    },
+    "security_design": {
+      "order": 50,
+      "dir": "50_security_design",
+      "template": "prd-security-design",
+      "depends_on": "detailed_design"
+    },
+    "test_design": {
+      "order": 60,
+      "dir": "60_test_design",
+      "template": "prd-test-design",
+      "depends_on": "security_design"
+    },
+    "env_setup": {
+      "order": 70,
+      "dir": "70_env_setup",
+      "template": null,
+      "depends_on": "test_design",
+      "type": "env_setup"
+    }
+  },
+  "code_paths": [
+    "src/**"
+  ],
+  "test_paths": [
+    "tests/**"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.1",
+  "project_name": "",
+  "last_updated": "",
+  "current_phase": "docs-phase",
+  "docs_phase": {
+    "requirements": {
+      "status": "not_started",
+      "updated_at": ""
+    },
+    "data_design": {
+      "status": "not_started",
+      "updated_at": ""
+    },
+    "basic_design": {
+      "status": "not_started",
+      "updated_at": ""
+    },
+    "detailed_design": {
+      "status": "not_started",
+      "updated_at": ""
+    },
+    "security_design": {
+      "status": "not_started",
+      "updated_at": ""
+    },
+    "test_design": {
+      "status": "not_started",
+      "updated_at": ""
+    },
+    "env_setup": {
+      "status": "not_started",
+      "updated_at": ""
+    }
+  },
+  "issues": []
+}
